@@ -1,12 +1,16 @@
 <script>
 	export let name;
-	import Form from "./Form.svelte";
+	import Form from "./components/Form.svelte";
+	import Grilla from "./components/Grilla.svelte";
+	
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-	<Form />
+	<h1>{name}!</h1>
+	<p>Por favor agregue al trabajador</p>
+	<Form  />
+	<Grilla />
+	
 </main>
 
 <style>
