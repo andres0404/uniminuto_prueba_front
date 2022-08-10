@@ -1,7 +1,19 @@
 <script>
+	import { onMount } from "svelte";
 	export let name;
 	import Form from "./components/Form.svelte";
 	import Grilla from "./components/Grilla.svelte";
+import { data_grilla } from "./store";
+
+	let data;
+	const API = `http://localhost:8001/empleados`;
+
+	onMount(async () =>  {
+		const response = await fetch(API);
+		data = await response.json();
+		console.log(data);
+		data_grilla.set(data);
+	})
 	
 </script>
 
