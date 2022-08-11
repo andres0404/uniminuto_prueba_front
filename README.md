@@ -1,3 +1,15 @@
+# Ver la prueba
+Clonar el repositorio.
+Entrar en la carpeta y bajar las dependencias
+```
+npm install
+```
+Luego ejecutar el proyecto y revisarlo
+```
+npm run dev
+```
+---
+---
 # This repo is no longer maintained. Consider using `npm init vite` and selecting the `svelte` option or — if you want a full-fledged app framework and don't mind using pre-1.0 software — use [SvelteKit](https://kit.svelte.dev), the official application framework for Svelte.
 
 ---
