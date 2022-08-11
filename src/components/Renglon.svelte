@@ -43,3 +43,10 @@
 </button>
 </td><td>{name}</td><td>{lastname}</td><td>{email}</td><td>{earn}</td>
 </tr>
+<style>
+    tr ,td{
+        background-color: lavender;
+        border: 5px solid #ffffff;
+        font-weight: normal;
+    }
+</style>

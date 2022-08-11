@@ -14,3 +14,12 @@ import Renglon from "./Renglon.svelte";
             {/each}
     </table>
 </div>
+<style>
+    table,  tr {
+        border: 4px solid #ffffff;
+        width: 80%;
+        background-color: lightblue;
+        font-weight: bold;
+        border-radius: 10px;
+    }
+</style>

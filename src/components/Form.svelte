@@ -57,20 +57,28 @@
 <form on:submit|preventDefault={new_upate_empleado}>
     <input type="hidden" id="id" value="{$data_formulario.id}" />
     <input type="hidden" id="idfr" value="{$data_formulario.idfr}" />
-    <div><span>Nombre:</span><span><input type="text" id="name" value="{$data_formulario.name}"  /></span></div>
-    <div><span>Apelido:</span><span><input type="text" id="lastname" value="{$data_formulario.lastname}"/> </span></div>
-    <div><span>E-mail:</span><span><input type="email" id="email" value="{$data_formulario.email}"/></span></div>
-    <div><span>Salario:</span><span><input type="number" id="earn" value="{$data_formulario.earn}" /></span></div>
+    <div><div class="labelt">Nombre:</div><span><input type="text" id="name" value="{$data_formulario.name}"  /></span></div>
+    <div><div class="labelt">Apelido:</div><span><input type="text" id="lastname" value="{$data_formulario.lastname}"/> </span></div>
+    <div><div class="labelt">E-mail:</div><span><input type="email" id="email" value="{$data_formulario.email}"/></span></div>
+    <div><div class="labelt">Salario:</div><span><input type="number" id="earn" value="{$data_formulario.earn}" /></span></div>
     <div><button type="submit" >Guardar</button><button type="button" on:click={limpiarForm}>Nuevo</button></div>
 </form>
 <style>
 div{
 
-    padding: 5px 5px ;
+    padding: 3px 5px ;
+}
+
+.labelt {
+    width: 7em;
+    
+    display: inline-block;
 }
 span {
     max-width: 700px;
-    border:1px solid #000000;
+    
+    align-items:left;
+    justify-content: center;
     text-align: left ;
     padding: 10px 10px;
     margin: 5px 5px;
